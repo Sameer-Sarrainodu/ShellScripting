@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# person1=modi
+# person2=sameer
 person1=$1
 person2=$2
 
