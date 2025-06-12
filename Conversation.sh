@@ -1,7 +1,7 @@
 #!/bin/bash
 
-person1 = modi
-person2 = sameer
+person1 =modi
+person2 =sameer
 
 echo "$person1: hey how are you $person2?"
 echo "$person2: i am fine sir"
