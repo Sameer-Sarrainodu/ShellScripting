@@ -1,5 +1,5 @@
 str1="hello"
-str2="hello"
+str2="hell"
 
 if [ "$str1" == "$str2" ]
 then 
