@@ -1,7 +1,7 @@
 str1="hello"
-str2="hell"
+str2="hello"
 
-if [ "$str1" == "$str2" ]
+if [[ "$str1" == "$str2" ]]
 then 
     echo "str1 is equal to str2"
 else
