@@ -9,3 +9,4 @@ greet(){
     echo "$*"
 
 }
+greet "apple" "banana" "mango"
