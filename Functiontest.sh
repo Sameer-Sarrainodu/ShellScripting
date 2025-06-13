@@ -5,8 +5,10 @@ greet(){
     do
         echo $arg
     done
-    echo $*
-    echo "$*"
+   for arg in $*
+   do
+    echo $arg
+    done
 
 }
 greet "apple" "banana" "mango"
