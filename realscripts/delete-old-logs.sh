@@ -9,16 +9,16 @@ scriptname=$(echo $0 | cut -d "." -f1)
 Log_File="$LogsFolder/$scriptname.log"
 sourcedir=/home/ec2-user/app-logs
 
+mkdir -p $LogsFolder
 
 if [ $UserId -ne 0 ]
 then
-    sudo -i
+    echo " eRROR you are not a root" | tee -a $Log_File
     exit 1
 else
     echo " you are running with root access" | tee -a $Log_File
 fi
 
-mkdir -p $LogsFolder
 
 
 validate(){
