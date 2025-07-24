@@ -12,8 +12,7 @@ sourcedir=/home/ec2-user/app-logs
 
 if [ $UserId -ne 0 ]
 then
-    echo -e "$R Errorr:: run this script $N" | tee -a $Log_File
-    exit 1
+    sudo su -
 else
     echo " you are running with root access" | tee -a $Log_File
 fi
