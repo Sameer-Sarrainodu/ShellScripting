@@ -12,7 +12,7 @@ sourcedir=/home/ec2-user/app-logs
 
 if [ $UserId -ne 0 ]
 then
-    sudo su -i
+    sudo -i
     exit 1
 else
     echo " you are running with root access" | tee -a $Log_File
