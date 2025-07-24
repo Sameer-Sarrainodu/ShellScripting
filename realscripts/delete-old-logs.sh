@@ -9,7 +9,6 @@ scriptname=$(echo $0 | cut -d "." -f1)
 Log_File="$LogsFolder/$scriptname.log"
 sourcedir=/home/ec2-user/app-logs
 
-mkdir -p $LogsFolder
 
 if [ $UserId -ne 0 ]
 then
@@ -18,6 +17,9 @@ then
 else
     echo " you are running with root access" | tee -a $Log_File
 fi
+
+mkdir -p $LogsFolder
+
 
 validate(){
     if [ $1 -eq 0 ]
