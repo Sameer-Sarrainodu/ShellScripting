@@ -70,10 +70,10 @@ then
     if [ -f $Zip_File ]
     then
         echo -e " successfully created zip"
-        while IFS = read -r filepath
+        while IFS= read -r filepath
         do
             echo " deleteing file: $filepath" | tee -a $Log_File
-            rm -rf filepath
+            rm -rf $filepath
         done <<< $files
         echo -e "log files older than $DAYS from source directory removed " 
     else
